@@ -1,0 +1,28 @@
+# This file is a template, and might need editing before it works on your project.
+# Template project: https://gitlab.com/pages/jekyll
+# Docs: https://docs.gitlab.com/ce/pages/
+image: ruby:2.3
+
+variables:
+  HTTPS_PROXY: "https://proxyout.lanl.gov:8080"
+  HTTP_PROXY: "http://proxyout.lanl.gov:8080"
+  NO_PROXY: "*.lanl.gov,lanl.gov"
+
+before_script:
+- gem install jekyll
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - make site
+  - cp -r _site/* .public
+  - mv .public public
+  artifacts:
+    paths:
+    - public
+  only:
+  - gh-pages
