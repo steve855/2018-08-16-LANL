@@ -299,59 +299,34 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="row">
 	<div class="col-md-4">
 	  <h4 id="shell-windows">Windows</h4>
-	  <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
 	  <ol>
-		<li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-		<li>Run the installer and follow the steps bellow:
-		  <ol>
-			{% comment %} Git 2.8.2 Setup {% endcomment %}
-			{% comment %} Information {% endcomment %}
-			<li>Click on "Next".</li>
-			{% comment %} Select Components {% endcomment %}
-			<li>Click on "Next".</li>
-			{% comment %} Adjusting your PATH environment {% endcomment %}
-			<li>
-			  <strong>
-				Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
-			  </strong>
-				If you forgot to do this programs that you need for the workshop will not work properly.
-				If this happens rerun the installer and select the appropriate option.
-			</li>
-			{% comment %} Choosing the SSH executable {% endcomment %}
-			<li>Click on "Next".</li>
-			{% comment %} Configuring the line ending conversions {% endcomment %}
-			<li>
-			  <strong>
-				Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
-			  </strong>
-			</li>
-			{% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
-			<li>
-			  <strong>
-				Keep "Use Windows' default console window" selected and click on "Next".
-			  </strong>
-			</li>
-			{% comment %} Configuring experimental performance tweaks {% endcomment %}
-			<li>Click on "Install".</li>
-			{% comment %} Installing {% endcomment %}
-			{% comment %} Completing the Git Setup Wizard {% endcomment %}
-			<li>Click on "Finish".</li>
-		  </ol>
-		</li>
-		<li>
-		  If your "HOME" environment variable is not set (or you don't know what this is):
-		  <ol>
-			<li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
-			<li>
-			  Type the following line into the command prompt window exactly as shown:
-			  <p><code>setx HOME "%USERPROFILE%"</code></p>
-			</li>
-			<li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
-			<li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
-		  </ol>
-		</li>
-	  </ol>
-	  <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+	    <li>Install Ubuntu for Windows
+	      <ol>
+		<li>Open the Microsoft Store</li>
+		<li>Search for 'Ubuntu'</li>
+		<li>Select Ubuntu 18.04 and hit install</li>
+	      </ol></li>
+	      <li>Enable the Windows Subsystem for Linux
+		<ol>
+		  <li>Open the Windows Power shell as an administrator
+		    <ol>
+		      <li>In the start menu, search for "Power Shell"</li>
+		      <li>Right click on the icon and select "Run as administrator"</li>
+		     </ol></li>
+		  <li> In the power shell enter the following command
+		   <pre>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+		   </pre></li>
+		  <li>Restart your computer</li>
+		 </ol>
+	       </li>
+	       <li>
+	       Open the "Ubuntu" application, you should see a command prompt
+	       </li>
+	       <li>
+	       A UNIX shell is successfully installed on your system
+	       </li>
+	      </ol>
+
 	</div>
 	<div class="col-md-4">
 	  <h4 id="shell-macosx">macOS</h4>
@@ -418,7 +393,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 		After installing Git, there will not be anything in your <code>/Applications</code> folder,
 		as Git is a command line program.
 		<strong>For older versions of OS X (10.5-10.8)</strong> use the
-		most recent available installer labelled "snow-leopard"
+		most recent available installer labeled "snow-leopard"
 		<a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
 	  </p>
 	</div>
@@ -450,31 +425,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="row">
 	<div class="col-md-4">
 	  <h4 id="editor-windows">Windows</h4>
-	  <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-	  <p>
-		nano is a basic editor and the default that instructors use in the workshop.
-		To install it,
-		download the <a href="{{site.swc_installer}}">
-		  {% if page.carpentry == "swc" %}
-		  Software Carpentry
-		  {% elsif page.carpentry == "dc" %}
-		  Data Carpentry
-		  {% elsif page.carpentry == "lc" %}
-		  Library Carpentry
-		  {% endif %}
-		  Windows installer
-	</a>
-		and double click on the file to run it.
-		<strong>This installer requires an active internet connection.</strong>
-	  </p>
-	  <p>
-		Others editors that you can use are
-		<a href="https://notepad-plus-plus.org/">Notepad++</a> or
-		<a href="https://www.sublimetext.com/">Sublime Text</a>.
-		<strong>Be aware that you must
-		  add its installation directory to your system path.</strong>
-		Please ask your instructor to help you do this.
-	  </p>
+	  <p>nano is a basic editor that can be used for all the modules in this workshop, it is included in the Ubuntu distribution</p>
 	</div>
 	<div class="col-md-4">
 	  <h4 id="editor-macosx">macOS</h4>
@@ -540,11 +491,28 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="row">
 	<div class="col-md-4">
 	  <h4 id="python-windows">Windows</h4>
-	  <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
 	  <ol>
-		<li>Open <a href="https://www.anaconda.com/download/#windows">https://www.anaconda.com/download/#windows</a> with your web browser.</li>
-		<li>Download the Python 3 installer for Windows.</li>
-		<li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
+	  <li>Install python3
+	    <ol>
+	       <li><pre>$ apt install pytyon3</pre></li>
+	       <li>After accepting the installation</li>
+	       <li><pre>$ which python</pre></li>
+	       <li>Make sure this is pointing to a directory starting with python3</li>
+	    </ol></li>
+	  <li>Install pip<ol>
+		<li><pre>$ apt install python-pip</pre></li>
+	  </ol></li>
+	  <li>Install python packages
+	  <ol>
+	  <li><pre>pip install numpy matplotlib jupyter</pre></li>
+	  </ol></li>
+	  <li> Test python<ol>
+	  <li><pre>$ python</pre></li>
+	  <li> within python type <pre>import numpy matplotlib</pre></li>
+	  <li> exit python</li>
+	  <li><pre>$ jupyter notebook</pre></li>
+	  <li>A website should launch automatically</li>
+	  </ol></li>
 	  </ol>
 	</div>
 	<div class="col-md-4">
@@ -590,6 +558,38 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 	  </ol>
 	</div>
   </div>
+  <h3>Make</h3>
+
+  <p>
+  GNU make is a tool for automating your workflow
+  </p>
+
+  <div class="col-md-4">
+      <h4 id="make-windows">Windows</h4>
+      <ol>
+      <li>Install make</li>
+      <li><pre>$ apt install make</pre></li>
+      <li>Type <pre>$ which make</pre> to test</li>
+      </ol>
+
+  </div>
+  <div class="col-md-4">
+      <h4 id="make-mac">macOS</h4>
+      <ol>
+      <li>It should already be installed</li>
+      <li>Type <pre>$ which make</pre> to test</li>
+      </ol>
+  </div>
+  <div class="col-md-4">
+      <h4 id="make-linux">Linux</h4>
+      <ol>
+      <li>It should already be installed</li>
+      <li>Type <pre>$ which make</pre> to test</li>
+      </ol>
+
+  </div>
+
+
 {% comment %}
   <p>
   Once you are done installing the software listed above,
