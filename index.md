@@ -318,7 +318,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 	      </ol>
 	    </li>
 	    <li> In the Powershell enter the following command:
-	      <pre><code style="border-radius: 15px; background-color: #232323; color: white">
+	      <pre style="border-radius: 15px; background-color: #232323; color: white"><code>
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 	      </code></pre>
 	    </li>
@@ -338,12 +338,12 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 	    <li>In the start menu, search for "Ubuntu"</li>
 	    <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
 	    <li>A black bash window will appear with the message
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="border-radius: 15px; background-color: black; color: white"><code>
 Installing, this may take a few moments...
 	      </code></pre>
 	    </li>
 	    <li>When the installation is complete, you will be prompted to create a username.
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="border-radius: 15px; background-color: black; color: white"><code>
 Installing, this may take a few minutes...
 Installation successful!
 Please create a default UNIX user account. The username does not need to match your Windows username.
@@ -353,20 +353,20 @@ Enter new UNIX username:
 	    </li>
 	    <li>Type a desired username and press enter</li>
 	    <li>You will be prompted to provide a password for the new account.
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="border-radius: 15px; background-color: black; color: white"><code>
 Enter new UNIX password:
 	      </code></pre>
 	    </li>
 	    <li>Type a memorable and secure password and press enter. This password is case-sensitive and cannot be recovered if forgotten. Do not be alarmed if no text appears on the screen as you enter the password. </li>
 	    <li>You will be prompted to confirm the password.
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="border-radius: 15px; background-color: black; color: white"><code>
 Enter new UNIX password:
 Retype new UNIX password:
 	      </code></pre>
 	    </li>
 	    <li>Retype the password and press enter</li>
 	    <li>Assuming the passwords match, a message confirming the password update should appear
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="border-radius: 15px; background-color: black; color: white"><code>
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
