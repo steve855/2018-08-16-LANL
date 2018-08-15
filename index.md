@@ -153,18 +153,18 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <strong>Contact</strong>:
   Please email
   {% if page.email %}
-	{% for email in page.email %}
-	  {% if forloop.last and page.email.size > 1 %}
-		or
-	  {% else %}
-		{% unless forloop.first %}
-		,
-		{% endunless %}
-	  {% endif %}
-	  <a href='mailto:{{email}}'>{{email}}</a>
-	{% endfor %}
+    {% for email in page.email %}
+      {% if forloop.last and page.email.size > 1 %}
+        or
+      {% else %}
+        {% unless forloop.first %}
+        ,
+        {% endunless %}
+      {% endif %}
+      <a href='mailto:{{email}}'>{{email}}</a>
+    {% endfor %}
   {% else %}
-	to-be-announced
+    to-be-announced
   {% endif %}
   for more information.
 </p>
@@ -213,7 +213,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
   If you want to use an Etherpad, go to
 
-	  http://pad.software-carpentry.org/YYYY-MM-DD-site
+      http://pad.software-carpentry.org/YYYY-MM-DD-site
 
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
@@ -232,12 +232,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Show what topics will be covered.
 
   1. If your workshop is R rather than Python, remove the comment
-	 around that section and put a comment around the Python section.
+     around that section and put a comment around the Python section.
   2. Some workshops will delete SQL.
   3. Please make sure the list of topics is synchronized with what you
-	 intend to teach.
+     intend to teach.
   4. You may need to move the div's with class="col-md-6" around inside
-	 the div's with class="row" to balance the multi-column layout.
+     the div's with class="row" to balance the multi-column layout.
 
   This is one of the places where people frequently make mistakes, so
   please preview your site before committing, and make sure to run
@@ -292,120 +292,120 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <h3>The Bash Shell</h3>
 
   <p>
-	Bash is a commonly-used shell that gives you the power to do simple
-	tasks more quickly.
+    Bash is a commonly-used shell that gives you the power to do simple
+    tasks more quickly.
   </p>
 
   <div class="row">
-	<div class="col-md-4">
-	  <h4 id="shell-windows">Windows</h4>
-	  <ol>
-	    <li>Install Ubuntu for Windows
-	      <ol>
-		<li>Open the Microsoft Store</li>
-		<li>Search for 'Ubuntu'</li>
-		<li>Select Ubuntu 18.04 and hit install</li>
-	      </ol></li>
-	      <li>Enable the Windows Subsystem for Linux
-		<ol>
-		  <li>Open the Windows Power shell as an administrator
-		    <ol>
-		      <li>In the start menu, search for "Power Shell"</li>
-		      <li>Right click on the icon and select "Run as administrator"</li>
-		     </ol></li>
-		  <li> In the power shell enter the following command
-		   <pre>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-		   </pre></li>
-		  <li>Restart your computer</li>
-		 </ol>
-	       </li>
-	       <li>
-	       Open the "Ubuntu" application, you should see a command prompt
-	       </li>
-	       <li>
-	       A UNIX shell is successfully installed on your system
-	       </li>
-	      </ol>
+    <div class="col-md-4">
+      <h4 id="shell-windows">Windows</h4>
+      <ol>
+        <li>Install Ubuntu for Windows
+          <ol>
+        <li>Open the Microsoft Store</li>
+        <li>Search for 'Ubuntu'</li>
+        <li>Select Ubuntu 18.04 and hit install</li>
+          </ol></li>
+          <li>Enable the Windows Subsystem for Linux
+        <ol>
+          <li>Open the Windows Power shell as an administrator
+            <ol>
+              <li>In the start menu, search for "Power Shell"</li>
+              <li>Right click on the icon and select "Run as administrator"</li>
+             </ol></li>
+          <li> In the power shell enter the following command
+           <pre>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+           </pre></li>
+          <li>Restart your computer</li>
+         </ol>
+           </li>
+           <li>
+           Open the "Ubuntu" application, you should see a command prompt
+           </li>
+           <li>
+           A UNIX shell is successfully installed on your system
+           </li>
+          </ol>
 
-	</div>
-	<div class="col-md-4">
-	  <h4 id="shell-macosx">macOS</h4>
-	  <p>
-		The default shell in all versions of macOS is Bash, so no
-		need to install anything.  You access Bash from the Terminal
-		(found in
-		<code>/Applications/Utilities</code>).
-		See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-		for an example on how to open the Terminal.
-		You may want to keep
-		Terminal in your dock for this workshop.
-	  </p>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="shell-linux">Linux</h4>
-	  <p>
-		The default shell is usually Bash, but if your
-		machine is set up differently you can run it by opening a
-		terminal and typing <code>bash</code>.  There is no need to
-		install anything.
-	  </p>
-	</div>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-macosx">macOS</h4>
+      <p>
+        The default shell in all versions of macOS is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
+        Terminal in your dock for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install anything.
+      </p>
+    </div>
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
 
 <div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
-		   is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
+           is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
   <p>
-	Git is a version control system that lets you track who made changes
-	to what when and has options for easily updating a shared or public
-	version of your code
-	on <a href="https://github.com/">github.com</a>. You will need a
-	<a href="https://help.github.com/articles/supported-browsers/">supported</a>
-	web browser (current versions of Chrome, Firefox or Safari,
-	or Internet Explorer version 9 or above).
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">github.com</a>. You will need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
+    web browser (current versions of Chrome, Firefox or Safari,
+    or Internet Explorer version 9 or above).
   </p>
   <p>
-	You will need an account at <a href="https://github.com/">github.com</a>
-	for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-	you to create a GitHub account if you don't have one already.
-	Please consider what personal information you'd like to reveal. For
-	example, you may want to review these
-	<a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-	for keeping your email address private</a> provided at GitHub.
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+    for keeping your email address private</a> provided at GitHub.
   </p>
 
   <div class="row">
-	<div class="col-md-4">
-	  <h4 id="git-windows">Windows</h4>
-	  <p>
-		Git should be installed on your computer as part of your Bash
-		install (described above).
-	  </p>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="git-macosx">macOS</h4>
-	  <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-	  <p>
-		<strong>For OS X 10.9 and higher</strong>, install Git for Mac
-		by downloading and running the most recent "mavericks" installer from
-		<a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-		After installing Git, there will not be anything in your <code>/Applications</code> folder,
-		as Git is a command line program.
-		<strong>For older versions of OS X (10.5-10.8)</strong> use the
-		most recent available installer labeled "snow-leopard"
-		<a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-	  </p>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="git-linux">Linux</h4>
-	  <p>
-		If Git is not already available on your machine you can try to
-		install it via your distro's package manager. For Debian/Ubuntu run
-		<code>sudo apt-get install git</code> and for Fedora run
-		<code>sudo dnf install git</code>.
-	  </p>
-	</div>
+    <div class="col-md-4">
+      <h4 id="git-windows">Windows</h4>
+      <p>
+        Git should be installed on your computer as part of your Bash
+        install (described above).
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-macosx">macOS</h4>
+      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
+      <p>
+        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
+        by downloading and running the most recent "mavericks" installer from
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+        After installing Git, there will not be anything in your <code>/Applications</code> folder,
+        as Git is a command line program.
+        <strong>For older versions of OS X (10.5-10.8)</strong> use the
+        most recent available installer labeled "snow-leopard"
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-linux">Linux</h4>
+      <p>
+        If Git is not already available on your machine you can try to
+        install it via your distro's package manager. For Debian/Ubuntu run
+        <code>sudo apt-get install git</code> and for Fedora run
+        <code>sudo dnf install git</code>.
+      </p>
+    </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
 
@@ -413,150 +413,150 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <h3>Text Editor</h3>
 
   <p>
-	When you're writing code, it's nice to have a text editor that is
-	optimized for writing code, with features like automatic
-	color-coding of key words.  The default text editor on macOS and
-	Linux is usually set to Vim, which is not famous for being
-	intuitive.  If you accidentally find yourself stuck in it, try
-	typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
-	exclamation mark), then hitting Return to return to the shell.
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words.  The default text editor on macOS and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive.  If you accidentally find yourself stuck in it, try
+    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
+    exclamation mark), then hitting Return to return to the shell.
   </p>
 
   <div class="row">
-	<div class="col-md-4">
-	  <h4 id="editor-windows">Windows</h4>
-	  <p>nano is a basic editor that can be used for all the modules in this workshop, it is included in the Ubuntu distribution</p>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="editor-macosx">macOS</h4>
-	  <p>
-		nano is a basic editor and the default that instructors use in the workshop.
-		See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-		for an example on how to open nano.
-		It should be pre-installed.
-	  </p>
-	  <p>
-		Others editors that you can use are
-		<a href="https://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-		<a href="https://www.sublimetext.com/">Sublime Text</a>.
-	  </p>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="editor-linux">Linux</h4>
-	  <p>
-		nano is a basic editor and the default that instructors use in the workshop.
-		It should be pre-installed.
-	  </p>
-	  <p>
-		Others editors that you can use are
-		<a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-		<a href="https://kate-editor.org/">Kate</a> or
-		<a href="https://www.sublimetext.com/">Sublime Text</a>.
-	  </p>
-	</div>
+    <div class="col-md-4">
+      <h4 id="editor-windows">Windows</h4>
+      <p>nano is a basic editor that can be used for all the modules in this workshop, it is included in the Ubuntu distribution</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-macosx">macOS</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open nano.
+        It should be pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="https://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+        <a href="https://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-linux">Linux</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+        <a href="https://kate-editor.org/">Kate</a> or
+        <a href="https://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
-		   the workshop will teach Python using something other than
-		   the Jupyter notebook.
-		   Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
+           the workshop will teach Python using something other than
+           the Jupyter notebook.
+           Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
   <h3>Python</h3>
 
   <p>
-	<a href="https://python.org">Python</a> is a popular language for
-	research computing, and great for general-purpose programming as
-	well.  Installing all of its research packages individually can be
-	a bit difficult, so we recommend
-	<a href="https://www.anaconda.com/distribution/">Anaconda</a>,
-	an all-in-one installer.
+    <a href="https://python.org">Python</a> is a popular language for
+    research computing, and great for general-purpose programming as
+    well.  Installing all of its research packages individually can be
+    a bit difficult, so we recommend
+    <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
+    an all-in-one installer.
   </p>
 
-	<p>
-	  Regardless of how you choose to install it,
-	  <strong>please make sure you install Python version 3.x</strong>
-	  (e.g., 3.6 is fine).
-	</p>
+    <p>
+      Regardless of how you choose to install it,
+      <strong>please make sure you install Python version 3.x</strong>
+      (e.g., 3.6 is fine).
+    </p>
 
-	<p>
-	  We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
-	  a programming environment that runs in a web browser. For this to work you will need a reasonably
-	  up-to-date browser. The current versions of the Chrome, Safari and
-	  Firefox browsers are all
-	  <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
-	  (some older browsers, including Internet Explorer version 9
-	  and below, are not).
-	</p>
+    <p>
+      We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
+      a programming environment that runs in a web browser. For this to work you will need a reasonably
+      up-to-date browser. The current versions of the Chrome, Safari and
+      Firefox browsers are all
+      <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
+      (some older browsers, including Internet Explorer version 9
+      and below, are not).
+    </p>
 
   <div class="row">
-	<div class="col-md-4">
-	  <h4 id="python-windows">Windows</h4>
-	  <ol>
-	  <li>Install python3
-	    <ol>
-	       <li><pre>$ apt install pytyon3</pre></li>
-	       <li>After accepting the installation</li>
-	       <li><pre>$ which python</pre></li>
-	       <li>Make sure this is pointing to a directory starting with python3</li>
-	    </ol></li>
-	  <li>Install pip<ol>
-		<li><pre>$ apt install python-pip</pre></li>
-	  </ol></li>
-	  <li>Install python packages
-	  <ol>
-	  <li><pre>pip install numpy matplotlib jupyter</pre></li>
-	  </ol></li>
-	  <li> Test python<ol>
-	  <li><pre>$ python</pre></li>
-	  <li> within python type <pre>import numpy matplotlib</pre></li>
-	  <li> exit python</li>
-	  <li><pre>$ jupyter notebook</pre></li>
-	  <li>A website should launch automatically</li>
-	  </ol></li>
-	  </ol>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="python-macosx">macOS</h4>
-	  <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
-	  <ol>
-		<li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
-		<li>Download the Python 3 installer for OS X.</li>
-		<li>Install Python 3 using all of the defaults for installation.</li>
-	  </ol>
-	</div>
-	<div class="col-md-4">
-	  <h4 id="python-linux">Linux</h4>
-	  <ol>
-		<li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
-		<li>Download the Python 3 installer for Linux.<br>
-		  (The installation requires using the shell. If you aren't
-		   comfortable doing the installation yourself
-		   stop here and request help at the workshop.)
-		</li>
-		<li>
-		  Open a terminal window.
-		</li>
-		<li>
-		  Type <pre>bash Anaconda3-</pre> and then press
-		  tab. The name of the file you just downloaded should
-		  appear. If it does not, navigate to the folder where you
-		  downloaded the file, for example with:
-		  <pre>cd Downloads</pre>
-		  Then, try again.
-		</li>
-		<li>
-		  Press enter. You will follow the text-only prompts. To move through
-		  the text, press the space key. Type <code>yes</code> and
-		  press enter to approve the license. Press enter to approve the
-		  default location for the files. Type <code>yes</code> and
-		  press enter to prepend Anaconda to your <code>PATH</code>
-		  (this makes the Anaconda distribution the default Python).
-		</li>
-		<li>
-		  Close the terminal window.
-		</li>
-	  </ol>
-	</div>
+    <div class="col-md-4">
+      <h4 id="python-windows">Windows</h4>
+      <ol>
+      <li>Install python3
+        <ol>
+           <li><pre>$ apt install pytyon3</pre></li>
+           <li>After accepting the installation</li>
+           <li><pre>$ which python</pre></li>
+           <li>Make sure this is pointing to a directory starting with python3</li>
+        </ol></li>
+      <li>Install pip<ol>
+        <li><pre>$ apt install python-pip</pre></li>
+      </ol></li>
+      <li>Install python packages
+      <ol>
+      <li><pre>pip install numpy matplotlib jupyter</pre></li>
+      </ol></li>
+      <li> Test python<ol>
+      <li><pre>$ python</pre></li>
+      <li> within python type <pre>import numpy matplotlib</pre></li>
+      <li> exit python</li>
+      <li><pre>$ jupyter notebook</pre></li>
+      <li>A website should launch automatically</li>
+      </ol></li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="python-macosx">macOS</h4>
+      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
+      <ol>
+        <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
+        <li>Download the Python 3 installer for OS X.</li>
+        <li>Install Python 3 using all of the defaults for installation.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="python-linux">Linux</h4>
+      <ol>
+        <li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
+        <li>Download the Python 3 installer for Linux.<br>
+          (The installation requires using the shell. If you aren't
+           comfortable doing the installation yourself
+           stop here and request help at the workshop.)
+        </li>
+        <li>
+          Open a terminal window.
+        </li>
+        <li>
+          Type <pre>bash Anaconda3-</pre> and then press
+          tab. The name of the file you just downloaded should
+          appear. If it does not, navigate to the folder where you
+          downloaded the file, for example with:
+          <pre>cd Downloads</pre>
+          Then, try again.
+        </li>
+        <li>
+          Press enter. You will follow the text-only prompts. To move through
+          the text, press the space key. Type <code>yes</code> and
+          press enter to approve the license. Press enter to approve the
+          default location for the files. Type <code>yes</code> and
+          press enter to prepend Anaconda to your <code>PATH</code>
+          (this makes the Anaconda distribution the default Python).
+        </li>
+        <li>
+          Close the terminal window.
+        </li>
+      </ol>
+    </div>
   </div>
   <h3>Make</h3>
 
