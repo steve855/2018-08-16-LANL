@@ -602,9 +602,19 @@ passwd: password updated successfully
 	</li>
 	<li> Forward X11 output
 	  <ol>
-	    <li>Type <tt>echo export DISPLAY=:0 >> $HOME/.bashrc</tt> into the bash terminal and press enter</li>
-	    <li>Type <tt>source $HOME/.bashrc</tt> into the bash terminal and press enter</li>
-	    <li>Type <tt>sudo apt-get install x11-apps</tt></li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+echo export DISPLAY=:0 >> $HOME/.bashrc
+          </code></pre> into the bash terminal and press enter
+        </li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+source $HOME/.bashrc
+          </code></pre> into the bash terminal and press enter
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install x11-apps
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, again enter the password established when installing Bash</li>
 	    <li>Type <tt>xeyes</tt> and press enter</li>
 	    <li>If a pair of cartoon eyes should appear on your screen, X11 forwarding has been configured</li>
@@ -613,13 +623,19 @@ passwd: password updated successfully
 	</li>
 	<li> Install a web browser within Ubuntu
 	  <ol>
-	    <li>Type <tt>sudo apt-get install firefox</tt> into the bash terminal and press enter</li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install firefox
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	  </ol>
 	</li>
 	<li>Install python3
 	  <ol>
-	    <li>Type <tt>sudo apt-get install python3</tt> in the terminal and press enter
+	    <li>Type
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install python3
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	    </li>
 	    <li>After accepting the installation</li>
@@ -629,19 +645,28 @@ passwd: password updated successfully
 	</li>
 	<li>Install pip
 	  <ol>
-	    <li>Type <tt>sudo apt-get install python3-pip</tt> in the terminal and press enter</li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install python3-pip
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	  </ol>
 	</li>
 	<li>Install python packages
 	  <ol>
-	    <li><pre>sudo apt-get install python3-numpy python3-matplotlib jupyter-notebook</pre></li>
+	    <li> Type
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install python3-numpy python3-matplotlib jupyter-notebook
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	  </ol>
 	</li>
 	<li> Test python
 	  <ol>
-	    <li>Type <tt>$ python</tt> into the terminal and press enter</li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+python
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>Within python terminal type
 	      <pre><code>
 import numpy matplotlib
