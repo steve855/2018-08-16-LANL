@@ -644,7 +644,7 @@ exit()
               </code></pre>
               This should return to the Bash terminal.
             </li>
-            <li>Type <tt>jupyter notebook</tt> into the terminal and press enter</li>
+            <li>Type <tt>jupyter-notebook</tt> into the terminal and press enter</li>
             <li>A website should launch automatically</li>
             <li>Close the browser</li>
           </ol>
