@@ -703,11 +703,22 @@ exit()
   <div class="col-md-4">
       <h4 id="make-windows">Windows</h4>
       <ol>
-      <li>Install make</li>
-      <li><pre>$ apt install make</pre></li>
-      <li>Type <pre>$ which make</pre> to test</li>
+        <li> Open a Bash terminal window
+          <ol>
+            <li>Click the <img src="./fig/windows-icon.svg" height="22" /> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>In the start menu, search for "Ubuntu"</li>
+            <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
+            <li>Click within the  black Bash terminal screen that appears</li>
+          </ol>
+        </li>
+        <li>Install make</li>
+          <ol>
+            <li>Within the terminal, type <tt>apt install build-essential</tt> and press enter</li>
+            <li>If prompted for a password, enter the password established when installing Bash</li>
+            <li>Type <tt>which make</tt> and press enter to test</li>
+          </ol>
+        </li>
       </ol>
-
   </div>
   <div class="col-md-4">
       <h4 id="make-mac">macOS</h4>
