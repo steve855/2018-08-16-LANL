@@ -327,15 +327,15 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
         </li>
         <li>Restart your computer
           <ol>
-            <li>Click the <img style="max-height: 100%;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
-            <li>Click the <img style="max-height: 100%;" src="./fig/power-icon.png"> in the start menu</li>
+            <li>Click the <img style="max-height: 1.3em;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>Click the <img style="max-height: 1.3em;" src="./fig/power-icon.png"> in the start menu</li>
             <li>Select <pre>Restart</pre>
           </ol>
         </li>
         <li> Open the "Ubuntu" application
-           <li>Click the <img style="max-height: 100%;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
+           <li>Click the <img style="max-height: 1.3em;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
            <li>In the start menu, search for "Ubuntu"</li>
-           <li>Click the <img style="max-height: 100%;" src="./fig/ubuntu-icon.png"> Ubuntu icon in the search results</li>
+           <li>Click the <img style="max-height: 1.3em;" src="./fig/ubuntu-icon.png"> Ubuntu icon in the search results</li>
            <li>A black window will appear with the message <pre>Installing, this may take a few moments...</pre>. Be patient</li>
            <li>When the installation is complete, you will be prompted to create a username.
              <pre><code style="border-radius: 15px; background-color: black; color: white">
