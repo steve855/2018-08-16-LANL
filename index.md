@@ -604,6 +604,11 @@ passwd: password updated successfully
           <ol>
             <li>Type <tt>echo export DISPLAY=:0 >> $HOME/.bashrc</tt> into the bash terminal and press enter</li>
             <li>Type <tt>source $HOME/.bashrc</tt> into the bash terminal and press enter</li>
+            <li>Type <tt>sudo apt-get install x11-apps</tt></li>
+            <li>If prompted for a password, again enter the password established when installing Bash</li>
+            <li>Type <tt>xeyes</li> and press enter</li>
+            <li>If a pair of cartoon eyes should appear on your screen, X11 forwarding has been configured</li>
+            <li>Click the <tt>X</tt> along the edge of the window bar above the eyes</li>
           </ol>
         </li>
         <li> Install a web browser within Ubuntu
