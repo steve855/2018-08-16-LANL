@@ -360,15 +360,15 @@ Enter new UNIX password:
 	    <li>Type a memorable and secure password and press enter. This password is case-sensitive and cannot be recovered if forgotten. Do not be alarmed if no text appears on the screen as you enter the password. </li>
 	    <li>You will be prompted to confirm the password.
 	      <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
-Enter new UNIX password:\n
+Enter new UNIX password:
 Retype new UNIX password:
 	      </code></pre>
 	    </li>
 	    <li>Retype the password and press enter</li>
 	    <li>Assuming the passwords match, a message confirming the password update should appear
 	      <pre style="white-space: pre; white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
-Enter new UNIX password:\n
-Retype new UNIX password:\n
+Enter new UNIX password:
+Retype new UNIX password:
 passwd: password updated successfully
 	      </code></pre>
 	    </li>
