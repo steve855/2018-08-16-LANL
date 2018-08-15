@@ -743,7 +743,10 @@ exit()
 	</li>
 	<li>Install make
 	  <ol>
-	    <li>Within the terminal, type <tt>apt install build-essential</tt> and press enter</li>
+	    <li>Within the terminal, type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+apt install build-essential
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	    <li>Type <tt>which make</tt> and press enter to test</li>
 	  </ol>
