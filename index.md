@@ -609,11 +609,13 @@ passwd: password updated successfully
         <li> Install a web browser within Ubuntu
           <ol>
             <li>Type <tt>sudo apt-get install firefox</tt> into the bash terminal and press enter</li>
+            <li>If prompted for a password, enter the password established when installing Bash</li>
           </ol>
         </li>
         <li>Install python3
           <ol>
             <li>Type <tt>sudo apt-get install python3</tt> in the terminal and press enter
+            <li>If prompted for a password, enter the password established when installing Bash</li>
             </li>
             <li>After accepting the installation</li>
             <li>Type <tt>which python</tt> and press enter</li>
@@ -622,12 +624,14 @@ passwd: password updated successfully
         </li>
         <li>Install pip
           <ol>
-            <li>Type <tt>sudo apt-get install python3-pip</pre> in the terminal and press enter</li>
+            <li>Type <tt>sudo apt-get install python3-pip</tt> in the terminal and press enter</li>
+            <li>If prompted for a password, enter the password established when installing Bash</li>
           </ol>
         </li>
         <li>Install python packages
           <ol>
             <li><pre>sudo apt-get install python3-numpy python3-matplotlib jupyter-notebook</pre></li>
+            <li>If prompted for a password, enter the password established when installing Bash</li>
           </ol>
         </li>
         <li> Test python
