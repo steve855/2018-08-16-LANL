@@ -565,7 +565,7 @@ passwd: password updated successfully
                 <li>Click the <img src="./fig/windows-icon.svg" height="22"/> Windows icon in the lower left corner of your screen to open the start menu</li>
                 <li>In the start menu, search for "Edge"</li>
                 <li>Click the <img src="./fig/edge-icon.png" height="19" /> Microsoft Edge icon in the search results</li>
-                <li>In Microsoft Edge, click in the text field at the top of the window with the text <tt>Search or enter web address</tt><li>
+                <li>In Microsoft Edge, click in the text field at the top of the window with the text <tt>Search or enter web address</tt></li>
                 <li>Type <tt>https://sourceforge.net/projects/xming/</tt> into the text field and press enter.</li>
                 <li>Click the green download button</li>
                 <li>After a short delay, the web page will update and a prompt will appear at the bottom of the Microsoft Edge window.</li>
@@ -590,6 +590,7 @@ passwd: password updated successfully
             <li>Click the <img src="./fig/windows-icon.svg" height="22"/> Windows icon in the lower left corner of your screen to open the start menu</li>
             <li>In the start menu, search for "xming"</li>
             <li>Click the <img src="./fig/xming-icon.png" height="19" /> Xming icon in the search results</li>
+          </ol>
         </li>
         <li> Open a Bash terminal window
           <ol>
