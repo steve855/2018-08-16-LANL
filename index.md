@@ -311,7 +311,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
           <ol>
             <li>Open the Windows Power shell as an administrator
               <ol>
-                <li>Click the <img src="./fig/windows-icon.svg" height="19"/> Windows icon in the lower left corner of your screen to open the start menu</li>
+                <li>Click the <img src="./fig/windows-icon.svg" height="22"/> Windows icon in the lower left corner of your screen to open the start menu</li>
                 <li>In the start menu, search for "Powershell"</li>
                 <li>Right click on the <img src="./fig/powershell-icon.svg" height="19"/> Microsoft Powershell icon and select "Run as administrator"</li>
                 <li>When prompted, click <tt>Yes</tt> to allow powershell to modify your device</li>
@@ -327,48 +327,54 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
         </li>
         <li>Restart your computer
           <ol>
-            <li>Click the <img src="./fig/windows-icon.svg" height="19" /> Windows icon in the lower left corner of your screen to open the start menu</li>
-            <li>Click the <img src="./fig/power-icon.png" height="19" /> in the start menu</li>
+            <li>Click the <img src="./fig/windows-icon.svg" height="22" /> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>Click the <img src="./fig/power-icon.png" height="19" /> Power icon in the start menu</li>
             <li>Select <tt>Restart</tt>
           </ol>
         </li>
         <li> Open the "Ubuntu" application
-           <li>Click the <img src="./fig/windows-icon.svg" height="19" /> Windows icon in the lower left corner of your screen to open the start menu</li>
-           <li>In the start menu, search for "Ubuntu"</li>
-           <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
-           <li>A black window will appear with the message <pre>Installing, this may take a few moments...</pre>. Be patient</li>
-           <li>When the installation is complete, you will be prompted to create a username.
-             <pre><code style="border-radius: 15px; background-color: black; color: white">
+          <ol>
+            <li>Click the <img src="./fig/windows-icon.svg" height="22" /> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>In the start menu, search for "Ubuntu"</li>
+            <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
+            <li>A black bash window will appear with the message 
+              <pre><code style="border-radius: 15px; background-color: black; color: white">
+Installing, this may take a few moments...
+              </code></pre>
+            </li>
+            <li>When the installation is complete, you will be prompted to create a username.
+              <pre><code style="border-radius: 15px; background-color: black; color: white">
 Installing, this may take a few minutes...
 Installation successful!
 Please create a default UNIX user account. The username does not need to match your Windows username.
 For more information visit: https://aka.ms/wslusers
 Enter new UNIX username: 
-             </code></pre>
-           </li>
-           <li>Type a desired username and press enter</li>
-           <li>You will be prompted to provide a password for the new account.
-             <pre><code style="border-radius: 15px; background-color: black; color: white">
+              </code></pre>
+            </li>
+            <li>Type a desired username and press enter</li>
+            <li>You will be prompted to provide a password for the new account.
+              <pre><code style="border-radius: 15px; background-color: black; color: white">
 Enter new UNIX password: 
-             </code></pre>
-           </li>
-           <li>Type a memorable and secure password and press enter. This password is case-sensitive and cannot be recovered if forgotten. Do not be alarmed if no text appears on the screen as you enter the password. </li>
-           <li>You will be prompted to confirm the password.
-             <pre><code style="border-radius: 15px; background-color: black; color: white">
+              </code></pre>
+            </li>
+            <li>Type a memorable and secure password and press enter. This password is case-sensitive and cannot be recovered if forgotten. Do not be alarmed if no text appears on the screen as you enter the password. </li>
+            <li>You will be prompted to confirm the password.
+              <pre><code style="border-radius: 15px; background-color: black; color: white">
 Enter new UNIX password: 
 Retype new UNIX password: 
-             </code></pre>
-           </li>
-           <li>Retype the password and press enter</li>
-           <li>Assuming the passwords match, a message confirming the password update should appear
-             <pre><code style="border-radius: 15px; background-color: black; color: white">
+              </code></pre>
+            </li>
+            <li>Retype the password and press enter</li>
+            <li>Assuming the passwords match, a message confirming the password update should appear
+              <pre><code style="border-radius: 15px; background-color: black; color: white">
 Enter new UNIX password: 
 Retype new UNIX password: 
 passwd: password updated successfully
-             </code></pre>
-           </li>
-           <li>A UNIX shell is successfully installed on your system</li>
-      </li>
+              </code></pre>
+            </li>
+            <li>A UNIX shell is successfully installed on your system</li>
+          </ol>
+        </li>
       </ol>
     </div>
     <div class="col-md-4">
@@ -422,9 +428,26 @@ passwd: password updated successfully
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
       <p>
-        Git should be installed on your computer as part of your Bash
-        install (described above).
+        Git can be installed on your computer following Bash install (described above).
       </p>
+      <ol>
+        <li> Open a Bash terminal window
+          <ol>
+            <li>Click the <img src="./fig/windows-icon.svg" height="22" /> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>In the start menu, search for "Ubuntu"</li>
+            <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
+            <li>Click within the black Bash terminal screen that appears</li>
+          </ol>
+        </li>
+        <li> Use the <tt>apt</tt> package manager distributed with Ubuntu to install <tt>git</tt>
+          <ol>
+            <li>Type <tt>sudo apt-get update</tt> and press enter</li>
+            <li>When prompted for a password, enter the password established when installing Bash</li>
+            <li>Type <tt>sudo apt-get install git</tt> and press enter</li>
+            <li>If prompted for a password, again enter the password established when installing Bash</li>
+          </ol>
+        </li>
+      </ol>
     </div>
     <div class="col-md-4">
       <h4 id="git-macosx">macOS</h4>
@@ -535,27 +558,92 @@ passwd: password updated successfully
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
       <ol>
-      <li>Install python3
-        <ol>
-           <li><pre>$ apt install pytyon3</pre></li>
-           <li>After accepting the installation</li>
-           <li><pre>$ which python</pre></li>
-           <li>Make sure this is pointing to a directory starting with python3</li>
-        </ol></li>
-      <li>Install pip<ol>
-        <li><pre>$ apt install python-pip</pre></li>
-      </ol></li>
-      <li>Install python packages
-      <ol>
-      <li><pre>pip install numpy matplotlib jupyter</pre></li>
-      </ol></li>
-      <li> Test python<ol>
-      <li><pre>$ python</pre></li>
-      <li> within python type <pre>import numpy matplotlib</pre></li>
-      <li> exit python</li>
-      <li><pre>$ jupyter notebook</pre></li>
-      <li>A website should launch automatically</li>
-      </ol></li>
+        <li>Install the Xming Windows X11 server
+          <ol>
+            <li>Download the Xming installation wizard
+              <ol>
+                <li>Click the <img src="./fig/windows-icon.svg" height="22"/> Windows icon in the lower left corner of your screen to open the start menu</li>
+                <li>In the start menu, search for "Edge"</li>
+                <li>Click the <img src="./fig/edge-icon.png" height="19" /> Microsoft Edge icon in the search results</li>
+                <li>In Microsoft Edge, click in the text field at the top of the window with the text <tt>Search or enter web address</tt><li>
+                <li>Type <tt>https://sourceforge.net/projects/xming/</tt> into the text field and press enter.</li>
+                <li>Click the green download button</li>
+                <li>After a short delay, the web page will update and a prompt will appear at the bottom of the Microsoft Edge window.</li>
+                <li>Select Run in the prompt</li>
+                <li>An administrative prompt will appear. When prompted, click <tt>Yes</tt> to allow Xming installation wizard to modify your device</li>
+              </ol>
+            </li>
+            <li> Run the installation Wizard
+              <ol>
+                <li>Click <tt>Next</tt></li>
+                <li>Select an installation location (or accept the default) and click <tt>Next</tt></li> 
+                <li>Select <tt>Don't install an SSH client</tt> and click <tt>Next</tt></li> 
+                <li>Click <tt>Next</tt></li> 
+                <li>Click <tt>Next</tt></li> 
+                <li>Click <tt>Install</tt></li> 
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li> Start the X11 server
+          <ol>
+            <li>Click the <img src="./fig/windows-icon.svg" height="22"/> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>In the start menu, search for "xming"</li>
+            <li>Click the <img src="./fig/xming-icon.png" height="19" /> Xming icon in the search results</li>
+        </li>
+        <li> Open a Bash terminal window
+          <ol>
+            <li>Click the <img src="./fig/windows-icon.svg" height="22" /> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>In the start menu, search for "Ubuntu"</li>
+            <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
+            <li>Click within the  black Bash terminal screen that appears</li>
+          </ol>
+        </li>
+        <li> Forward X11 output
+          <ol>
+            <li>Type <tt>echo export DISPLAY=:0 >> $HOME/.bashrc</tt> into the bash terminal and press enter</li>
+            <li>Type <tt>source $HOME/.bashrc</tt> into the bash terminal and press enter</li>
+          </ol>
+        </li>
+        <li> Install a web browser within Ubuntu
+          <ol>
+            <li>Type <tt>sudo apt-get install firefox</tt> into the bash terminal and press enter</li>
+          </ol>
+        </li>
+        <li>Install python3
+          <ol>
+            <li>Type <tt>sudo apt-get install python3</tt> in the terminal and press enter
+            </li>
+            <li>After accepting the installation</li>
+            <li>Type <tt>which python</tt> and press enter</li>
+            <li>Ensure this command prints a filepath ending in <tt>python3</tt></li>
+          </ol>
+        </li>
+        <li>Install pip
+          <ol>
+            <li>Type <tt>sudo apt-get install python3-pip</pre> in the terminal and press enter</li>
+          </ol>
+        </li>
+        <li>Install python packages
+          <ol>
+            <li><pre>sudo apt-get install python3-numpy python3-matplotlib jupyter-notebook</pre></li>
+          </ol>
+        </li>
+        <li> Test python
+          <ol>
+            <li>Type <tt>$ python</tt> into the terminal and press enter</li>
+            <li>Within python terminal type
+              <pre><code>
+import numpy matplotlib
+exit()
+              </code></pre>
+              This should return to the Bash terminal.
+            </li>
+            <li>Type <tt>jupyter notebook</tt> into the terminal and press enter</li>
+            <li>A website should launch automatically</li>
+            <li>Close the browser</li>
+          </ol>
+        </li>
       </ol>
     </div>
     <div class="col-md-4">
