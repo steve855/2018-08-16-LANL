@@ -311,10 +311,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
           <ol>
             <li>Open the Windows Power shell as an administrator
               <ol>
-                <li>Click the <img style="max-height: 100%;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
+                <li>Click the <img src="./fig/windows-icon.svg" height="19"/> Windows icon in the lower left corner of your screen to open the start menu</li>
                 <li>In the start menu, search for "Powershell"</li>
-                <li>Right click on the <img style="max-height: 100%;" src="./fig/powershell-icon.svg"> Microsoft Powershell icon and select "Run as administrator"</li>
-                <li>When prompted, click <pre>Yes</pre> to allow powershell to modify your device</li>
+                <li>Right click on the <img src="./fig/powershell-icon.svg" height="19"/> Microsoft Powershell icon and select "Run as administrator"</li>
+                <li>When prompted, click <tt>Yes</tt> to allow powershell to modify your device</li>
               </ol>
             </li>
             <li> In the Powershell enter the following command:
@@ -327,15 +327,15 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
         </li>
         <li>Restart your computer
           <ol>
-            <li>Click the <img style="height: 1.3em;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
-            <li>Click the <img style="height: 1.3em;" src="./fig/power-icon.png"> in the start menu</li>
-            <li>Select <pre>Restart</pre>
+            <li>Click the <img src="./fig/windows-icon.svg" height="19" /> Windows icon in the lower left corner of your screen to open the start menu</li>
+            <li>Click the <img src="./fig/power-icon.png" height="19" /> in the start menu</li>
+            <li>Select <tt>Restart</tt>
           </ol>
         </li>
         <li> Open the "Ubuntu" application
-           <li>Click the <img style="height: 1.3em;" src="./fig/windows-icon.svg"> Windows icon in the lower left corner of your screen to open the start menu</li>
+           <li>Click the <img src="./fig/windows-icon.svg" height="19" /> Windows icon in the lower left corner of your screen to open the start menu</li>
            <li>In the start menu, search for "Ubuntu"</li>
-           <li>Click the <img style="height: 1.3em;" src="./fig/ubuntu-icon.png"> Ubuntu icon in the search results</li>
+           <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
            <li>A black window will appear with the message <pre>Installing, this may take a few moments...</pre>. Be patient</li>
            <li>When the installation is complete, you will be prompted to create a username.
              <pre><code style="border-radius: 15px; background-color: black; color: white">
