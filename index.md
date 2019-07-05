@@ -318,7 +318,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 	      </ol>
 	    </li>
 	    <li> In the Powershell enter the following command:
-	      <pre><code style="border-radius: 15px; background-color: #232323; color: white">
+	      <pre style="white-space: pre; border-radius: 15px; background-color: #0000FF; color: white"><code style="white-space: pre">
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 	      </code></pre>
 	    </li>
@@ -338,12 +338,12 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 	    <li>In the start menu, search for "Ubuntu"</li>
 	    <li>Click the <img src="./fig/ubuntu-icon.png" height="19" /> Ubuntu icon in the search results</li>
 	    <li>A black bash window will appear with the message
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
 Installing, this may take a few moments...
 	      </code></pre>
 	    </li>
 	    <li>When the installation is complete, you will be prompted to create a username.
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
 Installing, this may take a few minutes...
 Installation successful!
 Please create a default UNIX user account. The username does not need to match your Windows username.
@@ -353,20 +353,20 @@ Enter new UNIX username:
 	    </li>
 	    <li>Type a desired username and press enter</li>
 	    <li>You will be prompted to provide a password for the new account.
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
 Enter new UNIX password:
 	      </code></pre>
 	    </li>
 	    <li>Type a memorable and secure password and press enter. This password is case-sensitive and cannot be recovered if forgotten. Do not be alarmed if no text appears on the screen as you enter the password. </li>
 	    <li>You will be prompted to confirm the password.
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
 Enter new UNIX password:
 Retype new UNIX password:
 	      </code></pre>
 	    </li>
 	    <li>Retype the password and press enter</li>
 	    <li>Assuming the passwords match, a message confirming the password update should appear
-	      <pre><code style="border-radius: 15px; background-color: black; color: white">
+	      <pre style="white-space: pre; white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
@@ -602,9 +602,19 @@ passwd: password updated successfully
 	</li>
 	<li> Forward X11 output
 	  <ol>
-	    <li>Type <tt>echo export DISPLAY=:0 >> $HOME/.bashrc</tt> into the bash terminal and press enter</li>
-	    <li>Type <tt>source $HOME/.bashrc</tt> into the bash terminal and press enter</li>
-	    <li>Type <tt>sudo apt-get install x11-apps</tt></li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+echo export DISPLAY=:0 >> $HOME/.bashrc
+          </code></pre> into the bash terminal and press enter
+        </li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+source $HOME/.bashrc
+          </code></pre> into the bash terminal and press enter
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install x11-apps
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, again enter the password established when installing Bash</li>
 	    <li>Type <tt>xeyes</tt> and press enter</li>
 	    <li>If a pair of cartoon eyes should appear on your screen, X11 forwarding has been configured</li>
@@ -613,13 +623,19 @@ passwd: password updated successfully
 	</li>
 	<li> Install a web browser within Ubuntu
 	  <ol>
-	    <li>Type <tt>sudo apt-get install firefox</tt> into the bash terminal and press enter</li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install firefox
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	  </ol>
 	</li>
 	<li>Install python3
 	  <ol>
-	    <li>Type <tt>sudo apt-get install python3</tt> in the terminal and press enter
+	    <li>Type
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install python3
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	    </li>
 	    <li>After accepting the installation</li>
@@ -629,19 +645,28 @@ passwd: password updated successfully
 	</li>
 	<li>Install pip
 	  <ol>
-	    <li>Type <tt>sudo apt-get install python3-pip</tt> in the terminal and press enter</li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install python3-pip
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	  </ol>
 	</li>
 	<li>Install python packages
 	  <ol>
-	    <li><pre>sudo apt-get install python3-numpy python3-matplotlib jupyter-notebook</pre></li>
+	    <li> Type
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+sudo apt-get install python3-numpy python3-matplotlib jupyter-notebook
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	  </ol>
 	</li>
 	<li> Test python
 	  <ol>
-	    <li>Type <tt>$ python</tt> into the terminal and press enter</li>
+	    <li>Type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+python
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>Within python terminal type
 	      <pre><code>
 import numpy matplotlib
@@ -718,7 +743,10 @@ exit()
 	</li>
 	<li>Install make
 	  <ol>
-	    <li>Within the terminal, type <tt>apt install build-essential</tt> and press enter</li>
+	    <li>Within the terminal, type 
+          <pre style="white-space: pre; border-radius: 15px; background-color: black; color: white"><code style="white-space: pre">
+apt install build-essential
+          </code></pre> into the bash terminal and press enter</li>
 	    <li>If prompted for a password, enter the password established when installing Bash</li>
 	    <li>Type <tt>which make</tt> and press enter to test</li>
 	  </ol>
